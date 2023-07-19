@@ -59,10 +59,21 @@ nav{
     transition: 0.5s ease;
 }
 /*main section part 1 */
-
-
-
-
+.goat-container{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+}
+.goat-left{
+    margin-left: 100px;
+    background-image:url(./images/Group14.png);
+}
+.goat-right{
+    margin-right: 100px;
+    padding-top: 20px;
+}
+.goat-right img{
+    width: 100%;
+}
 
 
 
