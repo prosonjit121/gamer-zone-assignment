@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+nav{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+
+}
+.logo{
+    /* display: flex;
+    margin-right: 50px; */
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    margin-left: 100px;
+}
+.logo img{
+    height: 35px;
+    width: 80px;
+    margin-right: 5px;
+}
+.logo .g{
+    color:#eb34d5
+}
+.logo .gamer{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+.right-conatiner{
+    margin-right: 100px;
+
+}
+.right-conatiner ul{
+    display: flex;
+    justify-content: flex-end
+    ;
+
+}
+.right-conatiner ul li{
+    margin-right:5px ;
+    list-style-type: none;
+}
+
+.right-conatiner ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: rgba(60, 53, 79, 1);
+}
+.right-conatiner ul li a i:first-child{
+    color: red;
+}
+.right-conatiner ul li a:hover{
+    background-color: lightblue;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+/*main section part 1 */
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    nav{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        height: 100px;
+    }
+
+    .right-conatiner ul{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 100px;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
