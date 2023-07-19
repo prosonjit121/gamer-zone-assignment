@@ -125,6 +125,8 @@ nav{
     font-size: 40px;
     font-family: Work Sans;
     padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .funny{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -141,7 +143,8 @@ nav{
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
+
+    padding: 0 100px;
 }
 
 .part{
@@ -150,7 +153,10 @@ nav{
     gap: 15px;
     padding:20px 100px;
 }
-.part img{
+.part-container{
+    position: relative;
+}
+.part-container .pic{
     width: 100%;
     opacity: 1;
     display: block;
@@ -158,6 +164,33 @@ nav{
     transition: .5s ease;
     backface-visibility: hidden;
 }
+.mid{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.part-container:hover .pic{
+    opacity: 0.4;
+}
+.part-container:hover .mid{
+    opacity: 1;
+
+}
+.icon .icc{
+    color: #30012b;
+    font-size: 80px;
+}
+.icon p{
+    font-size:25px;
+    font-family: work sans;
+    color: #30012b;
+}
+
 
 
 @media screen and (max-width:576px) {
@@ -181,5 +214,15 @@ nav{
         display: flex;
         flex-direction: column-reverse;
         margin: px;
+    }
+    .four-img h2{
+        font-size: 20px;
+    }
+    .part{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .four-img .p{
+        font-size: 10px;
     }
 }
