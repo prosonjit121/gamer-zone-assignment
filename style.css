@@ -64,7 +64,6 @@ nav{
 .goat-container{
     display: grid;
     grid-template-columns:repeat(2,1fr);
-    text-align: ;
 }
 .goat-left{
     background-image:url(./images/Group14.png);
@@ -190,10 +189,43 @@ nav{
     font-family: work sans;
     color: #30012b;
 }
+/* Section part 2 */
+.second-sec{
+    display: flex;
+    margin:50px 100px 0px 100px;
+
+}
+.left-content{
+    text-align: center;
+    margin-top: 20px;
+    padding: 100px;
+}
+.left-content h2{
+    font-family: Work Sans;
+    font-size: 48px;
+    font-weight: 700;
+}
+.left-content p{
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 18px;
+}
+.right-content img{
+    width: 100%;
+}
+.hard{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    bottom: 120px;
+    margin-left:-80px
+}
+.hard img{
+    width: 100%;
+}
 
 
-
-@media screen and (max-width:576px) {
+@media screen and (max-width:576px){
     nav{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -223,6 +255,39 @@ nav{
         grid-template-columns: repeat(1,1fr);
     }
     .four-img .p{
+        font-size: 1px;
+    }
+    .second-sec{
+        display: grid;
+        margin: 0;
+        padding: 0 100px;
+        grid-template-columns:repeat(1,1fr);
+    }
+    .left-content{
+        width: 40%;
+        padding: 0%;
+        text-align: center;
+        padding-left: 50px;
+    }
+    .left-content h2{
+        font-size: 20px;
+    }
+    .left-content p{
         font-size: 10px;
+        /* text-align: center;
+        margin-left: 80px; */
+    }
+    .right-content{
+        width: 70%;
+    }
+    .right-content img{
+        width: 150%;
+        margin-top: 20px;
+    }
+    .hard{
+        width: 30%;
+        position: relative;
+        left: 40px;
+        bottom: 80px;
     }
 }
