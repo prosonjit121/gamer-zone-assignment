@@ -223,8 +223,38 @@ nav{
 .hard img{
     width: 100%;
 }
+/* Button Section */
+.button-container{
+    padding:20px 100px ;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: space-around;
+    gap: 30px;
+    cursor: pointer;
+}
+.button-container-two{
+    padding:20px 150px ;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    gap: 30px;
+    cursor: pointer;
+}
+.button{
+    display: flex;
+    align-items: center;
+    gap:12px;
+    padding: 8px;
+}
+.button:hover{
+    border: 2px solid#F948B2;
+    border-radius: 40px;
+    color: #F948B2;
 
-
+}
+.button img{
+    width: 20%;
+}
 @media screen and (max-width:576px){
     nav{
         display: grid;
